@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop-Nutrition Mapper - AgriNutriLink</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="header-logo-link"><img src="assets/images/ANL logo.png" alt="ANL Logo" class="header-logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="mapper.html" class="active">Crop Mapper</a></li>
+                <li><a href="advisory.html">Ask ANL</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="policy.html">Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="mapper-hero">
+            <h1>Crop-Nutrition Mapper</h1>
+            <p>Explore the nutritional content of various crops and their health benefits</p>
+        </section>
+
+        <section class="mapper-tools">
+            <div class="search-section">
+                <input type="text" id="cropSearch" placeholder="Search for a crop...">
+                <button class="btn primary" id="searchBtn">Search</button>
+            </div>
+
+            <div class="filter-section">
+                <h3>Filter by:</h3>
+                <div class="filter-options">
+                    <select id="nutrientFilter">
+                        <option value="">Select Nutrient</option>
+                        <option value="protein">Protein</option>
+                        <option value="vitamins">Vitamins</option>
+                        <option value="minerals">Minerals</option>
+                        <option value="fiber">Fiber</option>
+                    </select>
+                    <select id="seasonFilter">
+                        <option value="">Select Season</option>
+                        <option value="spring">Spring</option>
+                        <option value="summer">Summer</option>
+                        <option value="autumn">Autumn</option>
+                        <option value="winter">Winter</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="crop-display">
+            <div class="crop-grid" id="cropGrid">
+                <!-- Crop cards will be dynamically populated here -->
+            </div>
+        </section>
+
+        <section class="nutrition-info">
+            <h2>Nutritional Information</h2>
+            <div class="nutrition-details" id="nutritionDetails">
+                <!-- Detailed nutrition information will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AgriNutriLink. All rights reserved.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/mapper.js"></script>
+</body>
+</html> 
